@@ -27,7 +27,7 @@ function loadData() {
   $nytHeaderElem.text("New York Times Articles About " + fLUpp(city) + "!");
   $wikiHeaderElem.text("Relevant Wikipedia Links About " + fLUpp(city) + "!");
 
-  var ny = "http://api.nytimes.com/svc/search/v2/articlesearch.json?fq=glocations:(" + city.toUpperCase() + ")&sort=newest&api-key=ab60487e0c3f4fdeb5b8e5f44682d9d8";
+  var ny = "https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=glocations:(" + city.toUpperCase() + ")&sort=newest&api-key=ab60487e0c3f4fdeb5b8e5f44682d9d8";
   $.getJSON(ny, function(data){
     var articles = data.response.docs;
     for(var i=0; i<articles.length;i++){
