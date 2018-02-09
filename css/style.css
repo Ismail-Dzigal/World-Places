@@ -1,63 +1,102 @@
 * {box-sizing:border-box;}
 
 body {
-    background-color: #CCC;
-    font-family: "Dosis";
+  background-image: url("http://res.cloudinary.com/ddhu9bxrc/image/upload/v1518163394/light_dark_background_jumdjl.jpg");
+  font-family: "Dosis";
+}
+
+label {
+  color: white;
+}
+
+input {
+  background-color: rgba(255,255,255,0.7);
+  width: 23%;
+}
+
+#submit-btn {
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.7);
 }
 
 .bgimg {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    z-index:-1;
-    opacity:1;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index:-1;
+  opacity:1;
 }
 
 .greeting {
-    color:black;
-    text-shadow: 1px 1px 3px rgba(255,255,255, .5);
-    text-align: center;
+  color:black;
+  text-shadow: 1px 1px 3px rgba(255,255,255, .5);
+  text-align: center;
 }
 
 .wikipedia-container {
-    float:right;
-    width:290px;
-    padding:10px;
-    margin-right: 10px;
-    background-color: rgba(255,255,255,0.7);
-    border-radius: 7px;
-    border: 1px solid grey;
+  float:right;
+  width:290px;
+  padding:10px;
+  margin-right: 10px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 7px;
+  border: 1px solid grey;
 }
 
 #wikipedia-links {
-    display:none;
+  display:none;
 }
 
 .nytimes-container {
-    padding: 10px;
-    margin-right:300px;
-    background-color: rgba(255,255,255,0.7);
-    border-radius: 7px;
-    border: 1px solid grey;
+  padding: 10px;
+  margin-right:300px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 7px;
+  border: 1px solid grey;
 }
 
 .article-list {
-    margin: 0;
-    padding: 0;
-    display:none;
+  margin: 0;
+  padding: 0;
+  display:none;
 }
 
 .article {
-    list-style-type: none;
-    padding:10px;
-    border-top: 1px solid #CCC;
+  list-style-type: none;
+  padding:10px;
+  border-top: 1px solid #CCC;
 }
 
 .article:first-child {
-    border-top:none;
+  border-top:none;
 }
 
 a {
-   text-decoration: none; 
+  text-decoration: none; 
 }
+
+@media screen and (max-width: 699px){
+  .wikipedia-container {
+    float:right;
+    width: 47%;
+    padding:10px;
+    margin-right: 10px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 7px;
+    border: 1px solid grey;
+    font-size: 0.8em;
+  }
+
+  .nytimes-container {
+    padding: 10px;
+    width: 47%;
+    font-size: 0.8em;
+    margin-right:300px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 7px;
+    border: 1px solid grey;
+  }
+ 
+}
+
